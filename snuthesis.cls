@@ -492,7 +492,8 @@
 				{M.S. THESIS}\\
 			\else
 				\@snu@koen{\@snu@academic@ko박사학위논문}%
-				{Ph.D. DISSERTATION}\\
+				{공학박사학위논문}\\
+				%{Ph.D. DISSERTATION}\\
 			\fi
 			\vspace{2cm}\nointerlineskip
 			\fontsize{22pt}{22pt}\selectfont
@@ -503,9 +504,9 @@
 			\if@snu@ko\else
 				\vspace{2cm}\nointerlineskip
 				\fontsize{14pt}{14pt}\selectfont
-				BY\\
-				\vspace{1cm}\nointerlineskip
-				\@author
+				%BY\\
+				%\vspace{1cm}\nointerlineskip
+				%\@author
 			\fi
 			\vfill
 			\fontsize{14pt}{14pt}\selectfont
@@ -521,10 +522,19 @@
 				\fontsize{16pt}{16pt}\selectfont
 				\@authoralt
 			\else
-				\fontsize{14pt}{14pt}\selectfont
-				\@snu@department@en\\
-				\@snu@school@en\\
-				\@snu@school@ensub
+%				\fontsize{14pt}{14pt}\selectfont
+%				\@snu@department@en\\
+%				\@snu@school@en\\
+%				\@snu@school@ensub
+				\fontsize{16pt}{16pt}\selectfont
+				\@snu@school@ko\\
+				\vspace{5mm}\nointerlineskip
+				\fontsize{14pt}{16pt}\selectfont
+				\@snu@department@ko\\
+				\vspace{5mm}\nointerlineskip
+				\fontsize{16pt}{16pt}\selectfont
+				\@authoralt
+
 			\fi
 		\fi
 	}
@@ -611,7 +621,7 @@
 			\vspace{5mm}\nointerlineskip
 			\fontsize{16pt}{16pt}\selectfont
 			이 논문을 %
-			\@snu@academic@ko\@snu@msphd{석사}{박사} %
+			\@snu@academic@ko\@snu@msphd{석사}{박사}%
 			학위논문으로 제출함\\
 			\vspace{5mm}\nointerlineskip
 			\fontsize{14pt}{14pt}\selectfont
@@ -634,12 +644,12 @@
 			\@snu@approvaldate\\
 			\vfill
 			\begin{tabular}[b]{cc}
-			위 \hfill 원 \hfill 장 & \committeestyle{\@snu@committeememberA} \\
-			부위원장               & \committeestyle{\@snu@committeememberB} \\
-			위 \hfill 원           & \committeestyle{\@snu@committeememberC} \\
+			위 \hfill 원 \hfill 장 & \committeestyle{\@snu@committeememberA} (인)\\
+			부위원장               & \committeestyle{\@snu@committeememberB} (인)\\
+			위 \hfill 원           & \committeestyle{\@snu@committeememberC} (인)\\
 			\if@snu@ms\else
-			위 \hfill 원           & \committeestyle{\@snu@committeememberD} \\
-			위 \hfill 원           & \committeestyle{\@snu@committeememberE} \\
+			위 \hfill 원           & \committeestyle{\@snu@committeememberD} (인)\\
+			위 \hfill 원           & \committeestyle{\@snu@committeememberE} (인)\\
 			\fi
 			\end{tabular}
 		\fi
